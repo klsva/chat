@@ -1,7 +1,8 @@
 .chat__body {
   height: 80%;
-  background-color: #eff7fd;
+  background-color: #eee;
+  background-image: url(../../images/cactus.png);
   border-radius: 3px;
   padding: 15px 10px;
-  overflow: hidden;
+  overflow-y: scroll;
 }

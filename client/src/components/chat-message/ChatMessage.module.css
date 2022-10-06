@@ -1,0 +1,39 @@
+.message__item {
+  width: 80%;
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+  position: relative;
+}
+.message__my {
+  margin-left: auto;
+  background-color: #cee7fc;
+  border-radius: 5px 0px 5px 5px;
+}
+.message__my::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  border-top: 10px solid #cee7fc;
+  border-right: 10px solid transparent;
+}
+.message__other {
+  border-radius: 0px 5px 5px 5px;  
+}
+.message__other::before {
+  content: '';
+  position: absolute;
+  top:0;
+  left: -10px;
+  border-top: 10px solid white;
+  border-left: 10px solid transparent;
+}
+.sender__name {
+  text-align: right;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.message__text {
+
+}

@@ -13,7 +13,7 @@ function LoginPage(){
     e.preventDefault();
     if (username) {
       localStorage.setItem('userId', nanoid(8));
-      localStorage.setItem('username', username);      
+      localStorage.setItem('username', username.trim());      
     }    
     navigate(`/chat`)
   }
