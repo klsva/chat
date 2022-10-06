@@ -1,4 +1,21 @@
 .chat__bar {
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
   height: 100%;
+  padding: 10px;
+  background-color: #eee;
+
+}
+.bar__content {
+  flex: 1 0 auto;
+}
+ul > li {
+  padding-bottom: 10px;
+  color: #08385e;
+}
+.bar__footer {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: flex-end;
 }

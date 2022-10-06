@@ -11,7 +11,7 @@ function ChatMessage({message}) {
                     [cl.message__item, cl.message__other].join(' ')
                     } 
           key={message.messageId}>
-      <div className={cl.sender__name}>{message.username}</div>
+      <div className={cl.sender__name}>{message.username === username ? '' : message.username}</div>
       <div className={cl.message__text}>{message.body}</div>
     </div>
   )

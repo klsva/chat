@@ -16,14 +16,16 @@ function ChatBar({socket, users, userId}) {
 
   return (
     <div className={cl.chat__bar}>
-      <h2>Name of the chat</h2>
-      <div>
-        <h3>Users in the room</h3>
-        <ul>
-          {users.length > 0 && users.map(u => <li key={u.userId}>{u.username}</li>)}
-        </ul>
-      </div>
-      <div>
+      <div className={cl.bar__content}>
+        <h1>Name of the chat</h1>
+        <div>
+          <h2>Users in this chat:</h2>
+          <ul>
+            {users.length > 0 && users.map(u => <li key={u.userId}>{u.username}</li>)}
+          </ul>
+        </div>
+      </div>      
+      <div className={cl.bar__footer}>
         <MyButton onClick={handleLeaveChat}>
           Leave chat
         </MyButton>
