@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+:root {
+  --dark-grey:#bebdbd;
+  --light-grey:#eeeeee;  
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+p {
+  line-height: 2rem;
+}
+.app {
+	height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: 
+  linear-gradient(
+    45deg,
+  var(--light-grey),
+  var(--dark-grey));
+  overflow: hidden;
+  min-height: 100%;
+}
+.login__container, .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  padding: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 8px 0px var(--dark-grey);
+  -moz-box-shadow: 4px 4px 8px 0px var(--dark-grey);
+  box-shadow: 4px 4px 8px 0px var(--dark-grey);
+}
+.app form {
+  width: 100%;
+  margin: 10px auto;
+  outline: none;
+}
+.wrapper {
+  width: 80%;
+  height: 70vh;
+}
+.chat__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.chat__content {
+  width: 65%;
+  height: 100%;
+}

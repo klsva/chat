@@ -1,0 +1,7 @@
+.chat__body {
+  height: 80%;
+  background-color: #eff7fd;
+  border-radius: 3px;
+  padding: 15px 10px;
+  overflow: hidden;
+}
