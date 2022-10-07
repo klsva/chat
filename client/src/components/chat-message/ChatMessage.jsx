@@ -2,7 +2,7 @@ import React from 'react';
 import cl from './ChatMessage.module.css';
 
 function ChatMessage({message}) {
-  const username = JSON.parse(localStorage.getItem('username'));
+  const username = localStorage.getItem('username');
   return (
     <div className={message.username === username 
                     ? 

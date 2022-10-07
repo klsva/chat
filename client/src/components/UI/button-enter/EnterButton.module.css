@@ -1,4 +1,4 @@
-.myBtn {
+.enterBtn {
   padding: 7px 20px;
   color: white;
   font-size: 14px;
@@ -6,4 +6,8 @@
   border: 1px solid #1a8ce9;
   border-radius: 3px;
   cursor: pointer;
+}
+.myBtn:hover {
+  background: #1a8ce9;
+  box-shadow: 2px 2px 2px 0 #65696d;
 }

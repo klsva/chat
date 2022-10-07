@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
 import MyInput from '../components/UI/input/MyInput';
-import MyButton from '../components/UI/button/MyButton';
+import EnterButton from '../components/UI/button-enter/EnterButton';
 import {nanoid} from 'nanoid';
 import { ENTER, LOGIN_PAGE_TITLE } from '../const';
 
@@ -13,9 +13,9 @@ function LoginPage(){
     e.preventDefault();
     if (username) {
       localStorage.setItem('userId', nanoid(8));
-      localStorage.setItem('username', username.trim());      
-    }    
-    navigate(`/chat`)
+      localStorage.setItem('username', username);    
+    } 
+    navigate(`/chat`);  
   }
 
   return (
@@ -29,11 +29,12 @@ function LoginPage(){
         <MyInput
           type='text'
           placeholder='Type the username you will use in the chat'
+          area-lable='username'
           value={username}
           required
           onChange={e => setUsername(e.target.value)}
         />
-        <MyButton>{ENTER}</MyButton>
+        <EnterButton>{ENTER}</EnterButton>
       </form>
     </div>
   )

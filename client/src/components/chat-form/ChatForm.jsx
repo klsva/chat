@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import {nanoid} from 'nanoid';
-import MyButton from '../UI/button/MyButton';
+import EnterButton from '../UI/button-enter/EnterButton';
 import MyInput from '../UI/input/MyInput';
 
 
@@ -33,9 +33,9 @@ function ChatForm({socket, userId, username}) {
           onChange={(e) => setMessageBody(e.target.value)}
           required
         />
-        <MyButton>
+        <EnterButton>
           Send
-        </MyButton>
+        </EnterButton>
       </form>          
     </div>
   )
